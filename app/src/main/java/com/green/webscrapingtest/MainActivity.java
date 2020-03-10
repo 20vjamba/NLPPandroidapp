@@ -23,6 +23,9 @@ public class MainActivity extends AppCompatActivity {
         /*String data = "<html><body><h1>Test Page</h1></body></html>";
         mywebview.loadData(data, "text/html", "UTF-8"); */
         //mywebview.loadUrl("file:///android_asset/myresource.html");
+        
+        /*Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
+        startActivity(browserIntent);*/
     }
 }
 
