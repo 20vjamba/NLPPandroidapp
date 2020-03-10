@@ -5,14 +5,13 @@ import android.net.Uri;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-WebView myWebView = (WebView) findViewById(R.id.webview);
-myWebView.setWebViewClient(MyWebViewClient);
-
 @SuppressWarnings("unused")
 class MyWebViewClient extends WebViewClient {
 
     @Override
     public boolean shouldOverrideUrlLoading(WebView view, String url) {
+        WebView myWebView = (WebView) findViewById(R.id.webView);
+        myWebView.setWebViewClient(new MyWebViewClient());
         Uri uri = Uri.parse(url);
         if (uri.getHost() != null && uri.getHost().contains("https://alearningcurve.pythonanywhere.com/accounts/signup/")) {
             return false;
