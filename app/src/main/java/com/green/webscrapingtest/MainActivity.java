@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         WebView myWebView = (WebView) findViewById(R.id.webView);
-        myWebView.setWebViewClient(MyWebViewClient());
+        myWebView.setWebViewClient(new MyWebViewClient());
         myWebView.loadUrl("https://alearningcurve.pythonanywhere.com/");
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
