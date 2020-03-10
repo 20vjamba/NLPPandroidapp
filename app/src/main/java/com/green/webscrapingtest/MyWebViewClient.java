@@ -5,6 +5,9 @@ import android.net.Uri;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+WebView myWebView = (WebView) findViewById(R.id.webview);
+myWebView.setWebViewClient(MyWebViewClient);
+
 @SuppressWarnings("unused")
 class MyWebViewClient extends WebViewClient {
 
