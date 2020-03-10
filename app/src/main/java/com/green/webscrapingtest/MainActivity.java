@@ -26,6 +26,11 @@ public class MainActivity extends AppCompatActivity {
         
         /*Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
         startActivity(browserIntent);*/
+        
+        /*String url = "http://www.stackoverflow.com";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url)); 
+        startActivity(i);*/
     }
 }
 
